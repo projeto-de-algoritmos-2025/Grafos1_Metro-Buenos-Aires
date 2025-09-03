@@ -3,7 +3,7 @@
 Temas:
  - Grafos1
 
-**Número da Lista**: 1<br>
+**Número da Lista**: x<br>
 **Conteúdo da Disciplina**: Grafos 1<br>
 
 ## Alunos
@@ -14,16 +14,17 @@ Temas:
 
 ## Sobre 
 
+Um projeto que usa o algoritmo BFS para auxiliar o uso do metrô em São Paulo tem como objetivo facilitar a navegação dos usuários nos sistemas de transporte público da cidade. O aplicativo fornece informações sobre as linhas de metrô e estações.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
-**Linguagem**: Python<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+Linguagem: JavaScript
+
+Framework: React
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+
