@@ -14,7 +14,7 @@ Temas:
 
 ## Sobre 
 
-Um projeto que usa o algoritmo BFS para auxiliar o uso do metrô em São Paulo tem como objetivo facilitar a navegação dos usuários nos sistemas de transporte público da cidade. O aplicativo fornece informações sobre as linhas de metrô e estações.
+Este projeto aplica a teoria dos grafos para criar um site interativo das linhas de metrô de Buenos Aires. Usando o Algoritmo de Busca em Largura (BFS), ele auxilia os usuários a navegarem no sistema, encontrando a rota mais eficiente entre as estações. O objetivo é facilitar o transporte público, proporcionando uma experiência de navegação clara e direta.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
