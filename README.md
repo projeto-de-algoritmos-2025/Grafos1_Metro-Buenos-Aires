@@ -14,17 +14,62 @@ Temas:
 
 ## Sobre 
 
-Este projeto aplica a teoria dos grafos para criar um site interativo das linhas de metrô de Buenos Aires. Usando o Algoritmo de Busca em Largura (BFS), ele auxilia os usuários a navegarem no sistema, encontrando a rota mais eficiente entre as estações. O objetivo é facilitar o transporte público, proporcionando uma experiência de navegação clara e direta.
+Este projeto é uma aplicação web interativa que simula o sistema de metrô de Buenos Aires, desenvolvida como parte da disciplina de Grafos 1. A aplicação utiliza conceitos fundamentais da teoria dos grafos para modelar a rede de transporte subterrâneo da capital argentina.
+
+### Objetivo
+O projeto tem como objetivo facilitar a navegação no sistema de metrô de Buenos Aires, fornecendo aos usuários uma ferramenta para encontrar rotas otimizadas entre estações, demonstrando a aplicação de algoritmos de grafos em problemas reais de transporte urbano.
+
+### Tecnologias Utilizadas
+- **Algoritmo BFS**: Implementado para encontrar o caminho mais  grafo não-direcionado
+- **Next.js**: Framework React para desenvolvimento web
+- **TypeScript**: Linguagem de programação para maior robustez
+
+### Funcionalidades
+- Cálculo automático de rotas entre estações
+- Interface para seleção de origem e destino
+- Exibição do caminho mais eficiente
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+
+### Página Principal
+![Página Principal](metro-next/public/Pagina_1.png)
+
+### Seleção de Estações
+![Seleção de Estações](metro-next/public/Pagina_2.png)
+
+### Resultado da Rota
+![Resultado da Rota](metro-next/public/Pagina_3.png)
 
 ## Instalação 
-Linguagem: JavaScript
 
-Framework: React
+### Pré-requisitos
+- Node.js (versão 18 ou superior)
+- npm ou yarn
 
-## Uso 
+### Tecnologias
+- **Linguagem**: TypeScript
+- **Framework**: Next.js
 
-## Outros 
+### Passos para instalação
+
+1. Instale as dependências:
+```bash
+npm install
+```
+
+2. Execute o projeto em modo de desenvolvimento:
+```bash
+npm run dev
+```
+
+3. Acesse a aplicação no navegador:
+```
+http://localhost:3000
+```
+
+
+
+## Videos
+
+https://drive.google.com/file/d/1Ccp-FqAV8oWVwsFSZStzc74HTUSBfY3u/view?usp=sharing
 
