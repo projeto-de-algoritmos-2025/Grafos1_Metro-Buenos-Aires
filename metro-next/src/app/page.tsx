@@ -15,11 +15,15 @@ const colorMap: { [key: string]: string } = {
 };
 
 export default function HomePage() {
-  const [startStation, setStartStation] = useState<string>('0');
-  const [endStation, setEndStation] = useState<string>('89');
+  const [startStation, setStartStation] = useState<string>('');
+  const [endStation, setEndStation] = useState<string>('');
   const [path, setPath] = useState<Station[] | null>(null);
 
   const handleFindPath = () => {
+    if (!startStation || !endStation) {
+      setPath(null);
+      return;
+    }
     const result = findShortestPath(startStation, endStation);
     setPath(result);
   };
@@ -50,6 +54,9 @@ export default function HomePage() {
                 onChange={(e) => setStartStation(e.target.value)}
                 className="w-full text-black p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
               >
+                <option value="" disabled>
+                  Selecione a estação de partida
+                </option>
                 {Graphs.map((station) => (
                   <option key={station.id} value={station.id}>
                     {station.name} ({station.color})
@@ -67,6 +74,9 @@ export default function HomePage() {
                 onChange={(e) => setEndStation(e.target.value)}
                 className="w-full p-2 border border-gray-300 text-black rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
               >
+                <option value="" disabled>
+                  Selecione a estação de destino
+                </option>
                 {Graphs.map((station) => (
                   <option key={station.id} value={station.id}>
                     {station.name} ({station.color})
@@ -76,7 +86,8 @@ export default function HomePage() {
             </div>
             <button
               onClick={handleFindPath}
-              className="w-full bg-indigo-600 text-black font-semibold py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
+              disabled={!startStation || !endStation}
+              className="w-full bg-indigo-600 disabled:bg-gray-400 text-black font-semibold py-2 px-4 rounded-md hover:bg-indigo-700 disabled:hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
             >
               Encontrar Caminho
             </button>
